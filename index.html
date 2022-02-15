@@ -6,18 +6,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Didact+Gothic&family=Dongle:wght@300;400&family=Merriweather:wght@300&family=Outfit:wght@300;400;600&family=Parisienne&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital@1&family=Tangerine:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>     
   <body>
     <main class="container">
       <div id="card">
-        <img src="images/illustration-hero.svg" alt="Ilustration hero">
-        <h1>Order Summary</h1>
+        <img class="ilustration" src="images/illustration-hero.svg" alt="Ilustration hero">
+        <h1 class="encabezado" >Order Summary</h1>
         <p>You can now listen to millons of songs, audiobooks, and podcasts on any device anywhere you like!</p>
         <div id="offer">
           <img src="images/icon-music.svg" alt="" aria-hidden="true">
-          <h4>Annual Plan</h4>
-          <p>$59.99/year</p>
-          <a href="#">Change</a>
+          <div id="price">
+            <h4 class="encabezado">Annual Plan</h4>
+            <p>$59.99/year</p>
+          </div>
+          <a class="enlace" href="#">Change</a>
         </div>
         <div id="buttons">
           <form action="">
@@ -26,7 +29,10 @@
           </form>
         </div>
       </div>
+      <footer>
+        <p>Challenge by <a class="enlace" href="https://www.frontendmentor.io/" rel="noopener noreferrer">Frontend Mentor</a>. Code by <a class="enlace" href="https://github.com/beatrizang" rel="noopener noreferrer">Beatriz</a></p>
+      </footer>
     </main>
-    
+
   </body>
 </html>
