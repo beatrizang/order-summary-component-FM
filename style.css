@@ -1,0 +1,135 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color:  hsl(225, 100%, 94%);
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(100%/3));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#card{
+    background-color: white;
+    width: 320px;
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0 40px 50px -60px hsl(223, 47%, 23%);
+}
+
+#card h1{
+    padding: 10px;
+}
+
+.ilustration{
+    width: 320px;
+    border-radius: 15px 15px 0 0;
+}
+
+.encabezado{
+    color: hsl(223, 47%, 23%);
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+#offer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 20px;
+}
+#price{
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  padding-left: 15px;
+  line-height: 25px;
+}
+
+.enlace{
+    color: hsl(245, 75%, 52%);
+}
+
+.enlace:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(246, 81%, 62%);
+}
+
+#buttons form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+button{
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 700;
+    
+}
+
+[name="button-payment"]{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 30px 20px -19px hsl(245, 75%, 52%);
+}
+
+[name="button-payment"]:hover{
+    cursor: pointer;
+    background-color: hsl(246, 81%, 62%);
+}
+
+[name="button-cancel"]{
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+}
+
+
+[name="button-cancel"]:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+footer{
+    padding: 20px;
+}
+
+@media screen and (max-width: 375px){
+    body{
+      background-image: url("images/pattern-background-mobile.svg");
+    }
+    .container{
+        transform: translate(-50%, 10%);
+        width: 100%; 
+        top: 50%;
+    }
+}
